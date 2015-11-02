@@ -224,6 +224,10 @@ Defaults to `document.body`.
 
 The `form` your `el` belongs to. If provided, the autocomplete list will be hidden whenever the form is submitted.
 
+### `liElement`
+
+The element tag to be used for list items.  Defaults to `li`.
+
 # API
 
 Once you've instantiated a `horsey`, you can do a few more things with it.
