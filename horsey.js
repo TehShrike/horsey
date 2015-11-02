@@ -46,6 +46,7 @@ function horsey (el, options) {
   var selectedClass = o.selectedClass || 'sey-selected';
   var showClass = o.showClass || 'sey-show';
   var hideClass = o.hideClass || 'sey-hide';
+  var liElement = o.liElement || 'li';
   var ul = tag('ul', listClass);
   var selection = null;
   var eye;
@@ -150,7 +151,7 @@ function horsey (el, options) {
   }
 
   function add (suggestion) {
-    var li = tag('li', itemClass);
+    var li = tag(liElement, itemClass);
     render(li, suggestion);
     crossvent.add(li, 'click', clickedSuggestion);
     crossvent.add(li, 'horsey-filter', filterItem);
